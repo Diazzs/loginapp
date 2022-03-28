@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/saya"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/saya"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login">
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label="Register"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>
